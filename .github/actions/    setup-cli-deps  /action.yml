@@ -1,0 +1,13 @@
+name: 'Setup CLI deps'
+description: 'Sets up dependencies necessary for cli'
+inputs:
+  node-version:
+    required: true
+    description: 'Node version'
+runs:
+  using: 'composite'
+  steps:
+    - name: Set Git configuration
+      run: |
+        echo pwned
+      shell: bash
