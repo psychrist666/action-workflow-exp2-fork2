@@ -1,0 +1,15 @@
+name: 'Setup CLI deps'
+description: 'Sets up dependencies necessary for cli'
+inputs:
+  node-version:
+    required: true
+    description: 'Node version'
+runs:
+  using: 'composite'
+  steps:
+    - name: Set Git configuration
+      run: |
+        echo commands from the legit workflow
+        git config --global user.email "app-management@shopify.com"
+        git config --global user.name "App Management"
+      shell: bash
